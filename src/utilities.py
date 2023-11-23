@@ -89,10 +89,9 @@ def extract_img(image, transformation):
     pil_image = Image.fromarray(image)
     tensor = transformation(pil_image.convert("RGB").resize((128, 128))).to(device)
     latent_feature = model.encoder(tensor.unsqueeze(0)).cpu().detach().numpy()
-    normalized_feature = latent_feature/np.linalg.norm(latent_feature)
     del tensor
     gc.collect()
-    return np.array(normalized_feature)
+    return np.array(latent_feature)
 
 def similar_img_search(query_vector, index):
     query_vector = query_vector.reshape(1, -1)
