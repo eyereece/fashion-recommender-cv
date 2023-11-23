@@ -1,0 +1,25 @@
+train: data_images/train_yolo
+val: data_images/test_yolo
+nc: 21
+names: ['Pants',
+        'Handbags',
+        'Shirts',
+        'Shoes',
+        'Scarves',
+        'Jewelry',
+        'Skirts',
+        'Coats',
+        'Hats',
+        'Dresses',
+        'Shorts',
+        'Watches',
+        'Sunglasses',
+        'Jumpsuits',
+        'Socks',
+        'Rings',
+        'Belts',
+        'Gloves',
+        'Swimwear',
+        'Stockings',
+        'Neckties'
+]
