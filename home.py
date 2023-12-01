@@ -10,13 +10,14 @@ from torchvision import transforms
 
 from src.utilities import ExactIndex, extract_img, similar_img_search, display_image, visualize_nearest_neighbors, visualize_outfits
 
+
 # --- UI Configurations --- #
-st.set_page_config(page_title="Fashion Recommender System",
+st.set_page_config(page_title="Smart Stylist powered by computer vision",
                    page_icon=":shopping_bags:"
                    )
 
 st.markdown("# :female_fairy: :shopping_bags:")
-st.markdown("# :rainbow[Fashion Recommender System with Computer Vision] :computer: :magic_wand:")
+st.markdown("# :rainbow[Your personal AI Stylist] :computer: :magic_wand:")
 
 # --- Load Model and Data --- #
 with st.spinner('Please wait while your model is loading'):
