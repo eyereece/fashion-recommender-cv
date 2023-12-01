@@ -5,7 +5,7 @@ import matplotlib.image as mpimg
 
 from src.utilities import viz_thumbnail
 
-st.set_page_config(page_title="Stylist Gallery",
+st.set_page_config(page_title="Gallery",
                    page_icon=":shopping_bags:")
 
 st.markdown("# :female_fairy: :shopping_bags:")
