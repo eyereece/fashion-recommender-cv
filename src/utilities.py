@@ -125,3 +125,26 @@ def visualize_outfits(boards):
         axs[i, 1].axis('off')
 
     return fig
+
+def viz_thumbnail(im_path, tn_sz):
+    a_img = mpimg.imread(im_path)
+    # Get the dimensions of the original image
+    img_height, img_width, _ = a_img.shape
+
+    # Calculate the padding needed to make the image square
+    max_dim = max(img_height, img_width)
+    pad_vert = (max_dim - img_height) // 2
+    pad_horiz = (max_dim - img_width) // 2
+
+    # Create new image with padding
+    padded_img = np.pad(a_img, ((pad_vert, pad_vert), (pad_horiz, pad_horiz), (0, 0)), mode='constant', constant_values=255)
+
+    # Create fig and axis
+    fig, ax = plt.subplots(figsize=tn_sz)
+
+    ax.imshow(padded_img)
+
+    # remove axes ticks and labels for a cleaner look
+    ax.axis('off')
+
+    return fig
