@@ -5,5 +5,4 @@ st.set_page_config(page_title="Stylist Gallery",
                    page_icon=":shopping_bags:")
 
 st.markdown("# :female_fairy: :shopping_bags:")
-st.markdown("# :rainbow[Your personal AI Stylist] :magic_wand:")
-
+st.markdown("# :rainbow[App Gallery] :magic_wand:")
