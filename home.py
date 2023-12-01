@@ -17,7 +17,7 @@ st.set_page_config(page_title="Smart Stylist powered by computer vision",
                    )
 
 st.markdown("# :female_fairy: :shopping_bags:")
-st.markdown("# :rainbow[Your personal AI Stylist] :computer: :magic_wand:")
+st.markdown("# :rainbow[Your personal AI Stylist] :magic_wand:")
 
 # --- Load Model and Data --- #
 with st.spinner('Please wait while your model is loading'):
