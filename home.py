@@ -18,8 +18,13 @@ st.set_page_config(page_title="Smart Stylist powered by computer vision",
 
 st.markdown("# :female_fairy: :shopping_bags:")
 st.markdown("# :rainbow[Your personal AI Stylist] :magic_wand:")
+
+# --- Message --- #
+st.write("Hello, welcome to my project page!")
+st.write("Smart Stylist is a computer vision powered web-app that lets you upload an image of an outfit and return recommendations on similar style.")
+st.write("To see how it works, check out this page <INSERT LINK> ")
 st.divider()
-st.info("Check out the gallery in sidebar to see previous recommendations", icon="👈🏼")
+st.info("Check out the gallery in sidebar to get some ideas", icon="👈🏼")
 
 # --- Load Model and Data --- #
 with st.spinner('Please wait while your model is loading'):
@@ -55,7 +60,7 @@ def upload_image():
         else:
             st.error('Only the following image files are supported (png, jpg, jpeg)')
 
-# --- Object Detection and Recommedations --- #
+# --- Object Detection and Recommendations --- #
 def main():
     object = upload_image()
 
@@ -63,7 +68,7 @@ def main():
         prediction = False
         image_obj = Image.open(object)
         st.image(image_obj)
-        button = st.button('Create Recommendations')
+        button = st.button('Show Recommendations')
         if button:
             with st.spinner(""" Detecting Fashion Objects from Image. Please Wait. """):
                 image_array = np.array(image_obj)
@@ -74,19 +79,21 @@ def main():
                     st.caption("No fashion objects detected.")
 
         if prediction:
-            st.caption(":rainbow[Detected Fashion Objects]")
             cropped_objs = [obj for obj in cropped_objs if obj.size > 0]
-            if len(cropped_objs) == 1:
-                st.image(cropped_objs[0])
-            else:
-                # If there's more than one images
-                fig, axes = plt.subplots(1, len(cropped_objs), figsize=(15, 3))
-                for i, obj in enumerate(cropped_objs):
-                        axes[i].imshow(obj)
-                        axes[i].axis('off')         
-                st.pyplot(fig)
 
-            st.caption(":rainbow[Recommended Items]")
+            # The following comments visualized detected fashion objects
+            # st.caption(":rainbow[Detected Fashion Objects]")  
+            # if len(cropped_objs) == 1:
+            #    st.image(cropped_objs[0])
+            #else:
+                # If there's more than one images
+            #    fig, axes = plt.subplots(1, len(cropped_objs), figsize=(15, 3))
+            #    for i, obj in enumerate(cropped_objs):
+            #            axes[i].imshow(obj)
+            #            axes[i].axis('off')         
+            #    st.pyplot(fig)
+
+            # st.caption(":rainbow[Recommended Items]")
             with st.spinner("Finding similar items ..."):
                 boards = []
                 for i, obj in enumerate(cropped_objs):

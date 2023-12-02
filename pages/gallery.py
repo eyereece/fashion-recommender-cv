@@ -8,7 +8,7 @@ from src.utilities import viz_thumbnail
 st.set_page_config(page_title="Gallery",
                    page_icon=":shopping_bags:")
 
-st.markdown("# :female_fairy: :shopping_bags:")
+st.markdown("# :female_fairy: :frame_with_picture:")
 st.markdown("# :rainbow[App Gallery] :magic_wand:")
 
 # Load your images
