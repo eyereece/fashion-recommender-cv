@@ -17,8 +17,8 @@ a visual search system powered by computer vision (in progress)
 # Usage
 * Upload an image of an outfit (background in white works best)
 * It currently only accepts jpg and png file
-* Click "Shoe Recommendations" button to retrieve recommendations
-* To update results, simple click on the "Show Recommendations" button again
+* Click "Show Recommendations" button to retrieve recommendations
+* To update results, simply click on the "Show Recommendations" button again
 
 <br>
 
