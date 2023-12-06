@@ -1,14 +1,14 @@
 <h2 align="center">SmartStylist: A Fashion Recommender System powered by Computer Vision</h2>
 <br>
-
 <p align="center">
-<a href="https://www.joankusuma.com/post/smart-stylist-a-fashion-recommender-system-powered-by-computer-vision"><img src="https://img.shields.io/badge/Project_Page-SmartStylist-pink
-" alt="Project Page"></a>
-<a href="https://www.joankusuma.com/post/object-detection-model-yolov5-on-fashion-images"><img src="https://img.shields.io/badge/Project_Page-ObjectDetection-blue
-" alt="Object Detection Page"></a>
-<a href="https://www.joankusuma.com/post/powering-visual-search-with-image-embedding"><img src="https://img.shields.io/badge/Project_Page-VisualSearch-green
-" alt="Object Detection Page"></a>
+<a href="https://www.joankusuma.com/post/smart-stylist-a-fashion-recommender-system-powered-by-computer-vision"><img src='https://img.shields.io/badge/Project_Page-SmartStylist-pink
+' alt='Project Page'></a>
+<a href="https://www.joankusuma.com/post/object-detection-model-yolov5-on-fashion-images"><img src='https://img.shields.io/badge/Project_Page-ObjectDetection-blue
+' alt='Object Detection Page'></a>
+<a href="https://www.joankusuma.com/post/powering-visual-search-with-image-embedding"><img src='https://img.shields.io/badge/Project_Page-VisualSearch-green
+' alt='Object Detection Page'></a>
 </p>
+<br>
 
 <figure>
     <center>
