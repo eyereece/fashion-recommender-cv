@@ -8,7 +8,7 @@
 <a href='https://smartstylist.streamlit.app'><img src='https://img.shields.io/badge/Streamlit-Demo-yellow'></a>
 </center>
 <br>
-
+<br>
 <figure>
     <center>
         <img src="https://static.wixstatic.com/media/81114d_7f499b8207b848bc8bccfe1035a28b3d~mv2.png" alt="flowchart" height="350" width="600">
