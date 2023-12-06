@@ -22,7 +22,7 @@ st.markdown("# :rainbow[Your personal AI Stylist] :magic_wand:")
 # --- Message --- #
 st.write("Hello, welcome to my project page!")
 st.write("Smart Stylist is a computer vision powered web-app that lets you upload an image of an outfit and return recommendations on similar style.")
-st.write("To see how it works, check out this page <INSERT LINK> ")
+st.write("For more details, check out the project page [here](https://www.joankusuma.com/post/smart-stylist-a-fashion-recommender-system-powered-by-computer-vision) ")
 st.divider()
 st.info("Check out the gallery in sidebar to get some ideas", icon="👈🏼")
 

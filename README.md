@@ -1,7 +1,20 @@
-# Your Personal AI Stylist
-a visual search system powered by computer vision (in progress)
-
+<h2 align="center">SmartStylist: A Fashion Recommender System powered by Computer Vision</h2>
 <br>
+
+<p align="center">
+<a href="https://www.joankusuma.com/post/smart-stylist-a-fashion-recommender-system-powered-by-computer-vision"><img src="https://img.shields.io/badge/Project_Page-SmartStylist-pink
+" alt="Project Page"></a>
+<a href="https://www.joankusuma.com/post/object-detection-model-yolov5-on-fashion-images"><img src="https://img.shields.io/badge/Project_Page-ObjectDetection-blue
+" alt="Object Detection Page"></a>
+<a href="https://www.joankusuma.com/post/powering-visual-search-with-image-embedding"><img src="https://img.shields.io/badge/Project_Page-VisualSearch-green
+" alt="Object Detection Page"></a>
+</p>
+
+<figure>
+    <center>
+        <img src="https://static.wixstatic.com/media/81114d_7f499b8207b848bc8bccfe1035a28b3d~mv2.png" alt="flowchart" height="350" width="600">
+    </center>
+</figure>
 
 # Technical Features
 * <b>Object Detection Model:</b> Leveraged the power of the YOLOv5 model trained on fashion images to detect fashion objects in images
@@ -11,14 +24,6 @@ a visual search system powered by computer vision (in progress)
 #### For more information on object detection model and feature extraction process, check out my repositories here:
 * https://github.com/eyereece/yolo-object-detection-fashion
 * https://github.com/eyereece/visual-search-with-image-embedding
-
-<br>
-
-# Usage
-* Upload an image of an outfit (background in white works best)
-* It currently only accepts jpg and png file
-* Click "Show Recommendations" button to retrieve recommendations
-* To update results, simply click on the "Show Recommendations" button again
 
 <br>
 
@@ -54,9 +59,42 @@ a visual search system powered by computer vision (in progress)
 
 <br>
 
+# Getting Started
+
+Clone the repository: 
+```bash
+git clone https://github.com/eyereece/fashion-recommender-cv.git
+```
+
+Navigate to the project directory:
+```bash
+cd fashion-recommender-cv
+```
+
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+Run the streamlit app:
+```bash
+streamlit run home.py
+```
+
+<br>
+
+# Usage
+* Upload an image of an outfit (background in white works best)
+* It currently only accepts jpg and png file
+* Click "Show Recommendations" button to retrieve recommendations
+* To update results, simply click on the "Show Recommendations" button again
+* Navigate over to the sidebar, at the "gallery", to explore sample results
+
+<br>
+
 # Dataset
 
-#### The dataset used to train the model is available <a href="https://github.com/eileenforwhat/complete-the-look-dataset/tree/master">here</a>:
+#### The dataset used in this project is available <a href="https://github.com/eileenforwhat/complete-the-look-dataset/tree/master">here</a>:
 <div class="box">
   <pre>
     @online{Eileen2020,

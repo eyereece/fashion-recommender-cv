@@ -180,7 +180,6 @@ tensorboard==2.13.0
 tensorboard-data-server==0.7.1
 tensorflow==2.13.0
 tensorflow-estimator==2.13.0
-tensorflow-macos==2.13.0
 tensorflow-recommenders==0.7.3
 termcolor==2.3.0
 terminado==0.17.1
